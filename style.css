@@ -1,0 +1,18 @@
+body {
+  font-family: 'Red Hat Display', sans-serif;
+}
+
+h1 {
+
+  font-size: 30px;
+  font-weight: 900;
+}
+
+h2 {
+  font-weight: 700;
+}
+
+p {
+  font-size: 16px;
+  font-weight: 500;
+}
