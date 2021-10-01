@@ -1,18 +1,48 @@
+html {
+  background-color: #E0E8FF;
+  background-image: url(images/pattern-background-desktop.svg);
+  background-repeat: no-repeat;
+}
+
 body {
   font-family: 'Red Hat Display', sans-serif;
 }
 
-h1 {
-
-  font-size: 30px;
+#title {
   font-weight: 900;
+  font-size: 30px;
 }
 
-h2 {
+#section-title {
   font-weight: 700;
 }
 
 p {
   font-size: 16px;
   font-weight: 500;
+  color: #C6C9D0;
+}
+
+footer {
+  font-size: 11px;
+  text-align: center;
+}
+
+#container {
+  background-color: white;
+  border-radius: 15px;
+  width: 300px;
+  margin: auto;
+  text-align: center;
+  /*border: 1px solid black;*/
+}
+
+#banner {
+  display: flex;
+  justify-content: center;
+}
+
+#music, #section-title, #price, #change-btn {
+  display: inline-block;
+  justify-content: center;
 }

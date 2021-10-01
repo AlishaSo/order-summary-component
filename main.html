@@ -4,23 +4,30 @@
     <meta charset='utf-8'/>
     <title>Order Summary</title>
     <link rel='icon' type='image/png' sizes='32x32' href='./images/favicon-32x32.png'/> <!--icon for tab display-->
-    <link href="https://fonts.googleapis.com/css2?family=Red+Hat+Display&display=swap" rel="stylesheet"> <!--provided font-->
+    <link href="https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@500;700;900&display=swap" rel="stylesheet"> <!--provided font-->
     <link href='style.css' rel='stylesheet'/> <!--CSS file-->
   </head>
   <body>
-    <h1>Order Summary</h1>
-    <p>You can now listen to millions
-      of songs, audiobooks, and podcasts on any
-      device anywhere you like!</p>
-    <section>
-      <h2>Annual Plan</h2>
-      <p>$59.99/year</p>
-      <button>change</button>
-    </section>
-    <button>Proceed to Payment</button>
-    <button>Cancel Order</button>
+    <div id='container'>
+      <div id='banner'>
+        <img src='images/illustration-hero.svg'>
+      </div>
+      <h1 id='title'>Order Summary</h1>
+      <p>You can now listen to millions
+        of songs, audiobooks, and podcasts on any
+        device anywhere you like!</p>
+      <section class='plan-type'>
+        <img id='music' src='images/icon-music.svg'/>
+        <h2 id='section-title'>Annual Plan</h2>
+        <p id='price'>$59.99/year</p>
+        <button id='change-btn'>change</button>
+      </section>
+      <button>Proceed to Payment</button>
+      <br/>
+      <button>Cancel Order</button>
+    </div>
     <footer>
-      <p>Challenge by
+      Challenge by
         <a
           href='frontendmentor.io'>
           Frontend Mentor</a>. Coded by <a
