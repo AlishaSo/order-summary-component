@@ -9,22 +9,24 @@
   </head>
   <body>
     <div id='container'>
-      <div id='banner'>
+      <!--<div id='banner'>-->
         <img src='images/illustration-hero.svg'>
-      </div>
+      <!--</div>-->
       <h1 id='title'>Order Summary</h1>
       <p>You can now listen to millions
         of songs, audiobooks, and podcasts on any
         device anywhere you like!</p>
-      <section class='plan-type'>
+      <div class='plan-type'>
         <img id='music' src='images/icon-music.svg'/>
-        <h2 id='section-title'>Annual Plan</h2>
-        <p id='price'>$59.99/year</p>
-        <button id='change-btn'>change</button>
-      </section>
-      <button>Proceed to Payment</button>
+        <!--<div id='plan-type'>-->
+          <h2 id='section-title'>Annual Plan</h2>
+          <p id='price'>$59.99/year</p>
+        <!--</div>-->
+        <button class='btn' id='change-btn'>Change</button>
+      </div>
+      <button class='btn' id='proceed-payment-btn'>Proceed to Payment</button>
       <br/>
-      <button>Cancel Order</button>
+      <button class='btn' id='cancel-btn'>Cancel Order</button>
     </div>
     <footer>
       Challenge by
