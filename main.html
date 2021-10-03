@@ -4,29 +4,29 @@
     <meta charset='utf-8'/>
     <title>Order Summary</title>
     <link rel='icon' type='image/png' sizes='32x32' href='./images/favicon-32x32.png'/> <!--icon for tab display-->
-    <link href="https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@500;700;900&display=swap" rel="stylesheet"> <!--provided font-->
+    <link href="https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@400;500;700;900&display=swap" rel="stylesheet"> <!--provided font-->
     <link href='style.css' rel='stylesheet'/> <!--CSS file-->
   </head>
   <body>
     <div id='container'>
       <!--<div id='banner'>-->
-        <img src='images/illustration-hero.svg'>
+        <img id='banner' src='images/illustration-hero.svg'>
       <!--</div>-->
       <h1 id='title'>Order Summary</h1>
-      <p>You can now listen to millions
+      <p class='grey-text'>You can now listen to millions
         of songs, audiobooks, and podcasts on any
         device anywhere you like!</p>
-      <div class='plan-type'>
+      <div class='plan'>
+      <div id='plan-type'>
         <img id='music' src='images/icon-music.svg'/>
-        <!--<div id='plan-type'>-->
-          <h2 id='section-title'>Annual Plan</h2>
-          <p id='price'>$59.99/year</p>
-        <!--</div>-->
+          <span id='plan-title'>Annual Plan</span>
+          <span class='grey-text' id='price'>$59.99/year</span>
+        </div>
         <button class='btn' id='change-btn'>Change</button>
       </div>
       <button class='btn' id='proceed-payment-btn'>Proceed to Payment</button>
       <br/>
-      <button class='btn' id='cancel-btn'>Cancel Order</button>
+      <button class='btn grey-text' id='cancel-btn'>Cancel Order</button>
     </div>
     <footer>
       Challenge by
