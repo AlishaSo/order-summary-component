@@ -1,6 +1,5 @@
 html { /* add background-color, and image(make sure it doesn't repeat) */
   background-color: #E0E8FF;
-  background-image: url(images/pattern-background-desktop.svg);
   background-repeat: no-repeat;
 }
 
@@ -28,11 +27,12 @@ footer {
 .btn {
   text-align: center;
   vertical-align: middle;
-  cursor: pointer;                             /* match active state to template *//*  */
+  cursor: pointer;                             /* match active state to template */
   font-family: 'Red Hat Display', sans-serif;   /* change font to match template */
   font-weight: 500;
 }
 
+/* style plan info div */
 .plan {
   display: flex;
   background-color: #F8F9FE;
@@ -41,6 +41,7 @@ footer {
   padding: 25px;
 }
 
+/* hero banner */
 #banner {
   width: 400px;
   display: flex;
@@ -49,45 +50,54 @@ footer {
   border-top-right-radius: 15px;         /* round corner */
 }
 
+/* order sumary header */
 #title {
   font-weight: 900;
   font-size: 30px;
 }
 
+/* annual plan text */
 #plan-title {
   font-weight: 700;
   margin: 0;
 }
 
+/* div containing all text, buttons and hero banner */
 #container {
   background-color: white;
   border-radius: 15px;
   width: 400px;
   margin: 80px auto 0 auto;
+  padding-bottom: 30px;
   text-align: center;
 }
 
+/* music note image */
 #music {
   width: 50px;
   margin: 0;
   padding: 0;
 }
 
+/* music image div */
 #music-div {
   display: flex;
   align-self: center;
 }
 
+/* div containing annual plan and price text */
 #plan-type {
   margin: 0;
   padding-right: 20px;
 }
 
+/* price element */
 #price {
   margin: 0;
   padding: 0;
 }
 
+/* button to change plan option */
 #change-btn {
   border: none;
   background-color: #F8F9FE;
@@ -96,16 +106,19 @@ footer {
   text-decoration: underline;
 }
 
+/* change button hover style*/
 #change-btn:hover {
   color: #766CF1;
   text-decoration: none;
 }
 
+/* change button center */
 #change-div {
   display: flex;
   align-self: center;
 }
 
+/* proceed payment button styles */
 #proceed-payment-btn {
   background-color: hsl(245, 75%, 52%);
   border: none;
@@ -116,19 +129,58 @@ footer {
   box-shadow: 0 16px 10px hsl(240,66%,92%);
 }
 
+/* proceed payment button hover style */
 #proceed-payment-btn:hover {
   background-color: #766CF1;
 }
 
+/* cancel order button style */
 #cancel-btn {
   border: none;
   background-color: white;
   margin-top: 25px;
-  margin-bottom: 50px;
   font-size: 14px;
   font-weight: 700;
 }
 
+/* cancel order button hover style */
 #cancel-btn:hover {
   color: #465066;
+}
+
+/* for when the device is other than a mobile */
+@media screen and (min-width: 376px) {
+  html {
+    background-image: url(images/pattern-background-desktop.svg);
+  }
+}
+
+/* for viewing on a mobile device */
+@media screen and (max-width: 375px) {
+  html {
+    background-image: url(images/pattern-background-mobile.svg);
+  }
+
+  .plan {
+    padding: 20px 10px;  /* make the grey div smaller */
+  }
+
+  #banner {
+    width: 320px;   /* reduce banner size for mobile screen*/
+  }
+
+  #container {
+    width: 320px;  /* reduce content container size on mobile screen */
+  }
+
+  /* change font size and add top margin to the annual plan and plan div */
+  #plan-type {
+    margin-top: 3px;
+    font-size: 14px;
+  }
+
+  /* adjust padding to the payment button on mobile screen */
+  #proceed-payment-btn {
+    padding: 15px 75px;
+  }
 }
