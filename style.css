@@ -34,10 +34,11 @@ footer {
 }
 
 .plan {
+  display: flex;
   background-color: #F8F9FE;
   border-radius: 15px;
   margin: 30px 30px;
-  padding: 30px;
+  padding: 25px;
 }
 
 #banner {
@@ -56,35 +57,35 @@ footer {
 #plan-title {
   font-weight: 700;
   margin: 0;
-  padding: 15px 30px;
 }
 
 #container {
   background-color: white;
   border-radius: 15px;
   width: 400px;
-  margin: auto;
+  margin: 80px auto 0 auto;
   text-align: center;
-  /*border: 1px solid black;*/
 }
 
 #music {
   width: 50px;
   margin: 0;
   padding: 0;
-  position: absolute;
+}
+
+#music-div {
+  display: flex;
+  align-self: center;
 }
 
 #plan-type {
-  float: ;
   margin: 0;
-  padding: 0;
+  padding-right: 20px;
 }
 
 #price {
   margin: 0;
   padding: 0;
-  display: ;
 }
 
 #change-btn {
@@ -100,14 +101,19 @@ footer {
   text-decoration: none;
 }
 
+#change-div {
+  display: flex;
+  align-self: center;
+}
+
 #proceed-payment-btn {
   background-color: hsl(245, 75%, 52%);
   border: none;
   border-radius: 10px;
   color: white;
-  font-size: 16px;
-  margin: ;
-  padding: 10px 90px;
+  font-size: 14px;
+  padding: 10px 105px;
+  box-shadow: 0 16px 10px hsl(240,66%,92%);
 }
 
 #proceed-payment-btn:hover {
@@ -117,6 +123,7 @@ footer {
 #cancel-btn {
   border: none;
   background-color: white;
+  margin-top: 25px;
   margin-bottom: 50px;
   font-size: 14px;
   font-weight: 700;
